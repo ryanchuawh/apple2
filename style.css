@@ -1,0 +1,38 @@
+.navbar1 {
+    background-color: gray;
+    border: 1px red solid;
+}
+
+#navbar1-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px red solid;
+    list-style: none;
+}
+
+.navbar2 {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar2-text1 {
+    border: 1px red solid;
+}
+
+#navbar2-text2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar2-text2 ul {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    list-style: none;
+}
