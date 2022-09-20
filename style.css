@@ -23,16 +23,43 @@
     border: 1px red solid;
 }
 
-#navbar2-text2 {
-    display: flex;
-    justify-content: flex-end;
-}
-
 #navbar2-text2 ul {
-    border: 1px red solid;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    border: 1px red solid;
     list-style: none;
+}
+
+#navbar2-text2 li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px red solid;
+}
+
+section ::before {
+    border: 1px red solid;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px red solid;
+}
+
+#big {
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.bigcontainer {
+    transform: rotateY(-40deg);
+    margin-right: 10px;
 }

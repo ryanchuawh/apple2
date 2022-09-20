@@ -40,5 +40,24 @@
             </ul>
         </div>
     </div>
+    <section>
+        <div>
+            <img src="hero_iphone_14_logo.png" id="1st">
+        </div>
+    </section>
+
+    <script>
+        Let 1st = document.getElementById('1st');
+
+        window.addEventListener('scroll', function()) {
+            Let value = window.scrollY;
+
+            1st.style.top = 5 + value * -0.5 + '%';
+        }
+    </script>
+
+    <div class="bigcontainer">
+        <span id="big">Big</span>
+    </div>
 </body>
 </html>
