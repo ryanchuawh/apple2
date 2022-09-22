@@ -36,28 +36,32 @@
     border: 1px red solid;
 }
 
-section ::before {
-    border: 1px red solid;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-section div {
+#wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#wrapper header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header img {
     border: 1px red solid;
+    width: 60%;
 }
 
-element.style {
-    transform: translate3d (0vm, 0vm, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    will-change: transform;
-}
-
-#big {
+#big,
+#bigger, 
+#iphonecontainer,
+#iphonepluscontainer,
+#fourthbattery {
     font-size: 96px;
     line-height: 1;
     font-weight: 600;
@@ -65,11 +69,83 @@ element.style {
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.bigcontainer {
-    transform: rotateY(40deg);
-    transform: rotateY(-30deg);
-    transform: skew(12deg);
-    margin-right: 10px;
+.bigcontainer span {
+    transform: rotate(40deg);
+    border: 1px green solid;
 }
 
+.biggercontainer span {
+    transform: rotateY(-40deg);
+    transform: rotateY(60deg);
+    transform: skew(1deg);
+}
 
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px red solid;
+}
+
+.second img {
+    width: 75%;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third img {
+    width: 75%;
+}
+
+.third span {
+    font-size: 60px;
+}
+
+#iphone,
+#iphoneplus {
+    font-size: 20px;
+}
+
+.third-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphonecontainer,
+#iphonepluscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third {
+    border: 1px red solid;
+}
+
+#thirdphone {
+    display: flex;
+    flex-direction: row;
+}
+
+#thirdphoneplus {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.fourth-container {
+    transform: rotate(-5deg);
+}
