@@ -51,6 +51,12 @@ section div {
     border: 1px red solid;
 }
 
+element.style {
+    transform: translate3d (0vm, 0vm, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
 #big {
     font-size: 96px;
     line-height: 1;
@@ -60,6 +66,10 @@ section div {
 }
 
 .bigcontainer {
-    transform: rotateY(-40deg);
+    transform: rotateY(40deg);
+    transform: rotateY(-30deg);
+    transform: skew(12deg);
     margin-right: 10px;
 }
+
+
