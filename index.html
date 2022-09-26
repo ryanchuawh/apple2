@@ -43,21 +43,21 @@
     </div>
 
     <div id="wrapper">
-        <header data-aos="fade-up">
+        <div>
             <img src="hero_iphone_14_logo.png" class="first">
-        </header>
+        </div>
         <div class="second-container">
             <div class="second" id="secondbig">
-                <div class="bigcontainer" data-aos="fade-up">
-                    <span id="big">Big</span>
+                <div class="bigcontainer">
+                    <span id="big" class="bigtext">Big</span>
                 </div>
-                <img src="hero_iphone_14_left.jpeg">
+                <img src="hero_iphone_14_left.jpeg" class="image" id="imageleft">
             </div>
             <div class="second" id="secondbigger">
-                <div class="biggercontainer" data-aos="fade-up">
-                    <span id="bigger">and bigger.</span>
+                <div class="biggercontainer">
+                    <span id="bigger" class="bigtext">and bigger.</span>
                 </div>
-                <img src="hero_iphone_14_right.jpeg">
+                <img src="hero_iphone_14_right.jpeg" class="image" id="imageright">
             </div>
         </div>
         <div class="third-container">
@@ -77,15 +77,16 @@
             </div>
         </div>
         <div class="fourth-container">
-            <div class="fourth" id="fourthbattery" data-aos="flip-up">
+            <div class="fourth" id="fourthbattery" data-aos="flip-up" style="transform: matrix (0, 0, 0, 0, 0, 50);">
                 <img src="hero_battery_fill.png">
                 <span>Our longest<br>battery life<br>ever.</span>
             </div>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -44,19 +44,21 @@
     flex-direction: column;
 }
 
-#wrapper header {
+#wrapper div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
 }
-
-header img {
+/*
+.first {
     border: 1px red solid;
     width: 60%;
+    transform: translateY(-400px);
+    transition: ease-in-out 1000ms;
 }
-
+*/
 #big,
 #bigger, 
 #iphonecontainer,
@@ -69,15 +71,11 @@ header img {
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.bigcontainer span {
-    transform: rotate(40deg);
-    border: 1px green solid;
-}
-
 .biggercontainer span {
     transform: rotateY(-40deg);
     transform: rotateY(60deg);
     transform: skew(1deg);
+    transform: skew(360deg, 20deg);
 }
 
 .second {
@@ -89,12 +87,18 @@ header img {
 
 .second img {
     width: 75%;
+    z-index: 5;
 }
 
 .second-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.second .bigcontainer #big {
+    border: 1px green solid;
+    transform: skew(360deg, 340deg);
 }
 
 .third img {
@@ -144,6 +148,8 @@ header img {
     align-items: center;
     text-align: center;
     padding: 100px;
+    transition: all 5000ms ease;
+    transform-style: preserve-3d;
 }
 
 .fourth-container {
