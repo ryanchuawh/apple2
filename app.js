@@ -43,3 +43,29 @@ yl.to(".image",{y: -100, duration: 5})
   .to(".image",{y: 100, duration: 5})
   .to("#imageright",{x: 400, duration: 10})
   .to("#imageleft",{x: -400, duration: 10})
+
+gsap.to("#iphonecontainer", {
+    x: -200,
+    duration: 5,
+    scrollTrigger: {
+        trigger: ".iphonecontainer",
+        start:  "top center",
+        end: "center",
+        scrub: true,
+        toggleActions: "restart reverse restart reverse",
+        markers: true,
+    }
+})
+
+gsap.to("#iphonepluscontainer", {
+    x: 200,
+    duration: 5,
+    scrollTrigger: {
+        trigger: ".iphonecontainer",
+        start:  "top center",
+        end: "center",
+        scrub: true,
+        toggleActions: "restart reverse restart reverse",
+        markers: true,
+    }
+})
